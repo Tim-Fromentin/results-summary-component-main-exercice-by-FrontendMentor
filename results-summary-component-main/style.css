@@ -107,7 +107,70 @@ body {
 }
 
 
+
+
+.summary_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+    height: 100%;
+    padding: 0;
+}
+.summary_list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3px 10px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+.summary_list li:nth-child(1) {
+    background: var(--color-summary-red);
+}
+.summary_list li:nth-child(2) {
+    background: var(--color-summary-Orangey);
+}
+.summary_list li:nth-child(3) {
+    background: var(--color-summary-green);
+}
+.summary_list li:nth-child(4) {
+    background: var(--color-summary-blue);
+}
+.summary_list_note span {
+    font-weight: var(--fw-800);
+}
+.summary_list_title {
+    display: flex;
+    align-items: center;
+}
+.summary_list_title img {
+    margin-right: 20px;
+}
+
+
+
+
+.card_btn {
+    background: var(--color-btn);
+    color: var(--color-bg-main);
+    border: none;
+    font-size: 1.3rem;
+    width: 100%;
+    padding: 15px;
+    border-radius: 50px;
+    }
+    .card_btn:hover {
+    background: var(--gradient-bg-card);
+
+}
+
+
+
+
 /* summary side */
+/* version with table */
 .card_container_summary {
     background: var(--color-bg-main);
     display: flex;
@@ -152,17 +215,7 @@ body {
     .summary_table tr:nth-child(4) {
         background: var(--color-summary-blue);
 }
-
-.card_btn {
-    background: var(--color-btn);
-    color: var(--color-bg-main);
-    border: none;
-    font-size: 1.3rem;
-    width: 100%;
-    padding: 15px;
-    border-radius: 50px;
-    }
-    .card_btn:hover {
-    background: var(--gradient-bg-card);
-
+.summary_table td span {
+    font-weight: var(--fw-800);
 }
+
